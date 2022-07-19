@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700;400&family=Ubuntu:wght@700&display=swap');
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
+:root {
+    --main-bg-color: #edf2f4;
+    --main-font-color: #2b2d42;
+    --main-btn-color: #d90429;
+    --hover-btn-color: #ef233c;
+    --division-color: #8d99ae;
+}
+
+/* -- GLOBAL STYLES -- */
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--main-font-color);
+}
+
+body {
+    background-color: var(--main-bg-color);
+    max-width: 87.5rem;
+    margin: 0 auto;
+    line-height: 1.5;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--main-font-color);
+}
+
+.divider {
+    height: 6.25rem;
+}
+
+.emphasis {
+    font-weight: 700;
+    color: var(--main-btn-color);
+}
+
+/* -- NAVIGATION STYLES -- */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6.25rem;
+    border-bottom: 0.125rem solid var(--division-color);
+    margin-bottom: 2.5rem;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.about {
+    font-size: 1.125rem;
+    margin-right: 2.5rem;
+}
+
+.about:hover {
+    border-bottom: 0.125rem solid var(--hover-btn-color);
+    padding-bottom: 5px;
+}
+
+.contact-us {
+    font-size: 1.125rem;
+    margin-left: 0.625rem;
+    background-color: var(--main-btn-color);
+    padding: 0.9375rem 1.5625rem;
+    border: 0;
+    border-radius: 0.25rem;
+}
+
+.contact-us a {
+    color: #fff;
+}
+
+.contact-us:hover {
+    background-color: var(--hover-btn-color);
+    cursor: pointer;
+}
+
+/* -- BODY STYLES -- */
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image1 {
+    max-width: 60%;
+    overflow: hidden;
+}
+
+.image1 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0.625rem;
+}
+
+.text1 {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 2.5rem;
+}
+
+.heading {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 1.625rem;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.paragraph {
+    font-size: 1.125rem;
+}
+
+.about1 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.image2 {
+    max-width: 60%;
+    overflow: hidden;
+}
+
+.image2 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0.625rem;
+}
+
+.text2 {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 2.5rem;
+}
+
+.about2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image3 {
+    max-width: 50%;
+    overflow: hidden;
+}
+
+.image3 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0.625rem;
+}
+
+/* -- CONTACT FORM STYLES -- */
+
+.contact-form .heading {
+    font-size: 2.125rem;
+    margin-bottom: 1.25rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 1.25rem;
+    border-bottom: 0.125rem solid var(--division-color);
+}
+
+form li+li {
+    margin-top: 1.25rem;
+}
+
+label {
+    display: inline-block;
+    text-align: right;
+    width: 5.625rem;
+}
+
+input,
+textarea {
+    font-family: 'Open Sans', sans-serif;
+    width: 37.5rem;
+    border: 0.0625rem solid var(--main-font-color);
+    border-radius: 0.25rem;
+    padding: 0.625rem;
+}
+
+input:focus,
+textarea:focus {
+    outline-color: #d90427be;
+}
+
+textarea {
+    resize: none;
+}
+
+.submit {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.submit-button {
+    font-size: 1.125rem;
+    background-color: var(--main-btn-color);
+    padding: 0.9375rem 1.5625rem;
+    border: 0;
+    border-radius: 0.25rem;
+    color: #fff;
+    margin-bottom: 1.25rem;
+}
+
+.submit-button:hover {
+    background-color: var(--hover-btn-color);
+    cursor: pointer;
+}
+
+/* -- FOOTER STYLES -- */
+
+.contact-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-top: 1.875rem;
+    margin-bottom: 1.25rem;
+}
+
+.address {
+    font-weight: 700;
+}
+
+.copyright {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.875rem;
+    margin-bottom: 1.25rem;
+}
+
+.copyright a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+
+@media screen and (max-width: 1400px) {
+    .heading {
+        font-size: 20px;
+    }
+
+    .paragraph {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .intro {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .about1 {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .about2 {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .image1 {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .image2 {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .image3 {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .heading {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    input,
+    textarea {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .submit {
+        justify-content: center;
+    }
+
+    .copyright {
+        font-size: 10px;
+    }
+
+    .copyright a {
+        font-size: 10px;
+    }
+
+    .logo h1 {
+        font-size: 1.2rem;
+    }
+
+    .about,
+    .contact-us {
+        font-size: 0.9rem;
+    }
+}
