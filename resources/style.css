@@ -41,6 +41,10 @@ a {
     height: 6.25rem;
 }
 
+.divider-small {
+    height: 3.125rem;
+}
+
 .emphasis {
     font-weight: 700;
     color: var(--main-btn-color);
@@ -69,14 +73,16 @@ a {
     font-size: 2rem;
 }
 
-.about {
+.links {
     font-size: 1.125rem;
     margin-right: 2.5rem;
 }
 
-.about:hover {
-    border-bottom: 0.125rem solid var(--hover-btn-color);
-    padding-bottom: 5px;
+.links a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--main-btn-color);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 10px;
 }
 
 .contact-us {
@@ -165,41 +171,37 @@ a {
 }
 
 .about2 {
-    display: flex;
-    justify-content: space-between;
+    position: relative;
 }
 
 .image3 {
-    max-width: 50%;
-    overflow: hidden;
-}
-
-.image3 img {
     max-width: 100%;
-    height: auto;
-    display: block;
+    height: 600px;
+    background-image: url(./images/garage-door.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 0.625rem;
+    border-bottom: 2px solid var(--division-color);
+    /* overflow: hidden; */
 }
 
 /* -- CONTACT FORM STYLES -- */
 
 .contact-form .heading {
-    font-size: 2.125rem;
+    font-size: 2.325rem;
     margin-bottom: 1.25rem;
+    color: var(--main-bg-color);
 }
 
 .contact-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding-bottom: 1.25rem;
-    border-bottom: 0.125rem solid var(--division-color);
+    position: absolute;
+    top: 6%;
+    left: 10%;
 }
 
 form li+li {
-    margin-top: 1.25rem;
+    margin-top: 1.5rem;
 }
 
 label {
@@ -211,10 +213,11 @@ label {
 input,
 textarea {
     font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
     width: 37.5rem;
     border: 0.0625rem solid var(--main-font-color);
     border-radius: 0.25rem;
-    padding: 0.625rem;
+    padding: 0.825rem;
 }
 
 input:focus,
@@ -256,8 +259,13 @@ textarea {
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
     line-height: 1.8;
-    margin-top: 1.875rem;
+    /* margin-top: 1.875rem; */
     margin-bottom: 1.25rem;
+    border-top: 2px solid var(--division-color);
+}
+
+.contact-details p:nth-of-type(1) {
+    margin-top: 34px;
 }
 
 .address {
@@ -276,6 +284,7 @@ textarea {
     font-weight: 700;
 }
 
+/* -- MEDIA QUERIES -- */
 
 @media screen and (max-width: 1400px) {
     .heading {
@@ -287,7 +296,7 @@ textarea {
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1048px) {
     .intro {
         flex-direction: column;
         justify-content: space-between;
@@ -298,6 +307,18 @@ textarea {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .text1 {
+        margin: 0;
+    }
+
+    .text2 {
+        margin: 0;
+    }
+
+    .paragraph {
+        text-align: center;
     }
 
     .about2 {
@@ -323,6 +344,27 @@ textarea {
 
     .heading {
         margin-bottom: 20px;
+    }
+
+    .contact-form {
+        top: 6%;
+        left: 18%;
+    }
+
+    .submit {
+        justify-content: center;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+
+    .divider {
+        height: 50px;
+    }
+
+    .divider-small {
+        height: 25px;
     }
 }
 
